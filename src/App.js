@@ -8,7 +8,10 @@ import {
 import { lazy, Suspense, useEffect } from "react";
 import Routes from "./routes";
 import { useDispatch, useSelector } from "react-redux";
-import { refreshAccessToken, selectAccessToken } from "./store/shared/userSlice";
+import {
+  refreshAccessToken,
+  selectAccessToken,
+} from "./store/shared/userSlice";
 import Home from "./pages/Home";
 import ClothingSection from "./pages/ClothingSection";
 import Checkout from "./pages/Checkout";
@@ -16,9 +19,9 @@ import "./App.css";
 
 const Login = lazy(() => import("./pages/Login"));
 
-const hatsCategoryId = "617da345b318b8a2e0cc933a";
-const jacketsCategoryId = "617da345b318b8a2e0cc9346";
-const sneakersCategoryId = "617da344b318b8a2e0cc9322";
+const hatsCategoryId = "6195f67407f9ec275e4e73f6";
+const jacketsCategoryId = "6195f67407f9ec275e4e73fd";
+const sneakersCategoryId = "6195f67407f9ec275e4e73d8";
 
 const App = () => {
   const accessToken = useSelector(selectAccessToken);

@@ -1,30 +1,30 @@
 {
   "files": {
     "main.css": "/xclothes-frontend/static/css/main.a893bdab.chunk.css",
-    "main.js": "/xclothes-frontend/static/js/main.109e4b11.chunk.js",
-    "main.js.map": "/xclothes-frontend/static/js/main.109e4b11.chunk.js.map",
-    "runtime-main.js": "/xclothes-frontend/static/js/runtime-main.8a770ca5.js",
-    "runtime-main.js.map": "/xclothes-frontend/static/js/runtime-main.8a770ca5.js.map",
-    "static/css/2.25932b22.chunk.css": "/xclothes-frontend/static/css/2.25932b22.chunk.css",
-    "static/js/2.16c9f74d.chunk.js": "/xclothes-frontend/static/js/2.16c9f74d.chunk.js",
-    "static/js/2.16c9f74d.chunk.js.map": "/xclothes-frontend/static/js/2.16c9f74d.chunk.js.map",
-    "static/js/3.98b0b10c.chunk.js": "/xclothes-frontend/static/js/3.98b0b10c.chunk.js",
-    "static/js/3.98b0b10c.chunk.js.map": "/xclothes-frontend/static/js/3.98b0b10c.chunk.js.map",
-    "static/js/4.51c3a873.chunk.js": "/xclothes-frontend/static/js/4.51c3a873.chunk.js",
-    "static/js/4.51c3a873.chunk.js.map": "/xclothes-frontend/static/js/4.51c3a873.chunk.js.map",
+    "main.js": "/xclothes-frontend/static/js/main.88dfff1e.chunk.js",
+    "main.js.map": "/xclothes-frontend/static/js/main.88dfff1e.chunk.js.map",
+    "runtime-main.js": "/xclothes-frontend/static/js/runtime-main.6008b415.js",
+    "runtime-main.js.map": "/xclothes-frontend/static/js/runtime-main.6008b415.js.map",
+    "static/css/2.e8743972.chunk.css": "/xclothes-frontend/static/css/2.e8743972.chunk.css",
+    "static/js/2.70eb70f1.chunk.js": "/xclothes-frontend/static/js/2.70eb70f1.chunk.js",
+    "static/js/2.70eb70f1.chunk.js.map": "/xclothes-frontend/static/js/2.70eb70f1.chunk.js.map",
+    "static/js/3.9438bc54.chunk.js": "/xclothes-frontend/static/js/3.9438bc54.chunk.js",
+    "static/js/3.9438bc54.chunk.js.map": "/xclothes-frontend/static/js/3.9438bc54.chunk.js.map",
+    "static/js/4.340aac82.chunk.js": "/xclothes-frontend/static/js/4.340aac82.chunk.js",
+    "static/js/4.340aac82.chunk.js.map": "/xclothes-frontend/static/js/4.340aac82.chunk.js.map",
     "index.html": "/xclothes-frontend/index.html",
-    "static/css/2.25932b22.chunk.css.map": "/xclothes-frontend/static/css/2.25932b22.chunk.css.map",
+    "static/css/2.e8743972.chunk.css.map": "/xclothes-frontend/static/css/2.e8743972.chunk.css.map",
     "static/css/main.a893bdab.chunk.css.map": "/xclothes-frontend/static/css/main.a893bdab.chunk.css.map",
-    "static/js/2.16c9f74d.chunk.js.LICENSE.txt": "/xclothes-frontend/static/js/2.16c9f74d.chunk.js.LICENSE.txt",
+    "static/js/2.70eb70f1.chunk.js.LICENSE.txt": "/xclothes-frontend/static/js/2.70eb70f1.chunk.js.LICENSE.txt",
     "static/media/hats.78889842.jpg": "/xclothes-frontend/static/media/hats.78889842.jpg",
     "static/media/jackets.dbb445ff.jpg": "/xclothes-frontend/static/media/jackets.dbb445ff.jpg",
     "static/media/sneakers.73639ffd.jpg": "/xclothes-frontend/static/media/sneakers.73639ffd.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8a770ca5.js",
-    "static/css/2.25932b22.chunk.css",
-    "static/js/2.16c9f74d.chunk.js",
+    "static/js/runtime-main.6008b415.js",
+    "static/css/2.e8743972.chunk.css",
+    "static/js/2.70eb70f1.chunk.js",
     "static/css/main.a893bdab.chunk.css",
-    "static/js/main.109e4b11.chunk.js"
+    "static/js/main.88dfff1e.chunk.js"
   ]
 }

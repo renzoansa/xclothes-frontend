@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/xclothes-frontend/static/css/main.a893bdab.chunk.css",
-    "main.js": "/xclothes-frontend/static/js/main.88dfff1e.chunk.js",
-    "main.js.map": "/xclothes-frontend/static/js/main.88dfff1e.chunk.js.map",
+    "main.js": "/xclothes-frontend/static/js/main.84bb0762.chunk.js",
+    "main.js.map": "/xclothes-frontend/static/js/main.84bb0762.chunk.js.map",
     "runtime-main.js": "/xclothes-frontend/static/js/runtime-main.6008b415.js",
     "runtime-main.js.map": "/xclothes-frontend/static/js/runtime-main.6008b415.js.map",
     "static/css/2.e8743972.chunk.css": "/xclothes-frontend/static/css/2.e8743972.chunk.css",
@@ -25,6 +25,6 @@
     "static/css/2.e8743972.chunk.css",
     "static/js/2.70eb70f1.chunk.js",
     "static/css/main.a893bdab.chunk.css",
-    "static/js/main.88dfff1e.chunk.js"
+    "static/js/main.84bb0762.chunk.js"
   ]
 }

@@ -16,20 +16,22 @@ import Home from "./pages/Home";
 import ClothingSection from "./pages/ClothingSection";
 import Checkout from "./pages/Checkout";
 import "./App.css";
+import { fetchClothingCategories, selectAllClothingCategories } from "./store/clothingCategory";
 
 const Login = lazy(() => import("./pages/Login"));
 
-const hatsCategoryId = "6195f67407f9ec275e4e73f6";
-const jacketsCategoryId = "6195f67407f9ec275e4e73fd";
-const sneakersCategoryId = "6195f67407f9ec275e4e73d8";
-
 const App = () => {
   const accessToken = useSelector(selectAccessToken);
+  const clothingCategories = useSelector(selectAllClothingCategories)
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(refreshAccessToken());
   }, [dispatch]);
+
+  useEffect(() => {
+    dispatch(fetchClothingCategories())
+  }, [dispatch])
 
   return (
     <div className="app">
@@ -43,24 +45,13 @@ const App = () => {
             <Route exact path={Routes.home}>
               <Home />
             </Route>
-            <Route exact path={Routes.hats}>
-              <ClothingSection
-                sectionTitle="Hats"
-                clothingCategoyId={hatsCategoryId}
-              />
-            </Route>
-            <Route exact path={Routes.jackets}>
-              <ClothingSection
-                sectionTitle="Jackets"
-                clothingCategoyId={jacketsCategoryId}
-              />
-            </Route>
-            <Route exact path={Routes.sneakers}>
-              <ClothingSection
-                sectionTitle="Sneakers"
-                clothingCategoyId={sneakersCategoryId}
-              />
-            </Route>
+            {clothingCategories.map(clothingCategory => (
+              <Route exact path={Routes[clothingCategory.name]}>
+                <ClothingSection
+                  sectionTitle={clothingCategory.name}
+                  clothingCategoyId={clothingCategory.id}
+                />
+              </Route>))}
             <Route exact path={Routes.checkout}>
               <Checkout />
             </Route>

@@ -11,3 +11,14 @@ export const fetchClothesByCategory = async (categoryId) => {
     throw new Error(error.response.data.message);
   }
 };
+
+export const fetchClothesCategories = async () => {
+  try {
+    const response = await axios.get(
+      endpoints.clothingCategories
+    );
+    return response.data;
+  } catch (error) {
+    throw new Error(error.response.data.message);
+  }
+}

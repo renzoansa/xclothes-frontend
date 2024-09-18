@@ -13,7 +13,6 @@ import { useDispatch, useSelector } from "react-redux";
 import * as config from "../../config";
 import * as paymentStatuses from "../../shared/paymentStatus";
 import { useHistory } from "react-router";
-import Routes from "../../routes";
 import CenteredModal from "../CenterdModal";
 
 export const CheckoutForm = () => {
@@ -25,7 +24,7 @@ export const CheckoutForm = () => {
     name: config.isDevMode() ? "test" : "",
     address: config.isDevMode() ? "naranjal" : "",
     city: config.isDevMode() ? "lima" : "",
-    country: config.isDevMode() ? "Pery" : "",
+    country: config.isDevMode() ? "Peru" : "",
   });
   const dispatch = useDispatch();
   const paymentStatus = useSelector(selectPaymentStatus);
@@ -33,11 +32,7 @@ export const CheckoutForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    dispatch(
-      createPaymantIntent({ stripe, elements, CardElement, formData: form })
-    ).then(() => {
-      history.push(Routes.home);
-    });
+    dispatch(createPaymantIntent({ stripe, elements, CardElement, formData: form, returnUrl: window.location.origin, history }))
   };
 
   const handleChange = (event) => {

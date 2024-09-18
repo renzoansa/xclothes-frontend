@@ -14,12 +14,14 @@ import {
   REGISTER,
 } from "redux-persist";
 import paymentReducer from "./store/paymenthSlice";
+import clothingCategoryReducer from "./store/clothingCategory";
 
 const rootReducer = combineReducers({
   user: userReducer,
   clothes: clothesReducer,
   cart: cartReducer,
   payment: paymentReducer,
+  clothingCategory: clothingCategoryReducer
 });
 
 const persistConfig = {

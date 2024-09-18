@@ -14,6 +14,7 @@ const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
+    cartRemoved: cartAdapter.removeAll,
     itemAdded: (state, action) => {
       const clothingId = action.payload;
 
@@ -36,6 +37,8 @@ const cartSlice = createSlice({
 });
 
 const cartSelectors = cartAdapter.getSelectors((state) => state.cart);
+
+export const { cartRemoved } = cartSlice.actions
 
 export const { selectAll: selectAllCartItems } = cartSelectors;
 

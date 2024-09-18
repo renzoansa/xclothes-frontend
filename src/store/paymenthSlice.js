@@ -2,6 +2,8 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import * as paymentService from "../services/paymentService";
 import { selectAllCartItems } from "./shared/cartSlice";
 import * as paymentStatus from "../shared/paymentStatus";
+import Routes from "../routes";
+import { cartRemoved } from './shared/cartSlice'
 
 const initialState = {
   paymentStatus: paymentStatus.idle,
@@ -10,15 +12,19 @@ const initialState = {
 
 export const createPaymantIntent = createAsyncThunk(
   "payment/createPaymentIntent",
-  ({ stripe, elements, CardElement, formData }, thunkAPI) => {
+  async ({ stripe, elements, CardElement, formData, returnUrl, history }, thunkAPI) => {
     const items = selectAllCartItems(thunkAPI.getState());
-    return paymentService.createPaymantIntent(
+    const response = await paymentService.createPaymantIntent(
       stripe,
       elements,
       CardElement,
       items,
-      formData
+      formData,
+      returnUrl
     );
+    thunkAPI.dispatch(cartRemoved())
+    history.push(Routes.home);
+    return response
   }
 );
 

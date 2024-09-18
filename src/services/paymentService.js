@@ -6,7 +6,8 @@ export const createPaymantIntent = async (
   elements,
   CardElement,
   items,
-  formData
+  formData,
+  returnUrl
 ) => {
   const { paymentMethod } = await stripe.createPaymentMethod({
     type: "card",
@@ -17,6 +18,7 @@ export const createPaymantIntent = async (
     await axios.post(`${config.apiUrl}/create-payment-intent`, {
       paymentMethodId: paymentMethod.id,
       checkoutItems: items,
+      returnUrl,
       ...formData,
     });
   } catch (error) {

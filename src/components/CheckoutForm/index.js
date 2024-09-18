@@ -50,6 +50,10 @@ export const CheckoutForm = () => {
     <CenteredModal onClose={handleClick}>
       <Wrapper>
         <Content onSubmit={handleSubmit}>
+          <small>Test card number: 4242424242424242</small>
+          <small>Test date: 12/74</small>
+          <small>Test cvc: 999</small>
+          <small>Test zip: 99999</small>
           <CardElement />
           <FormItem
             onChange={handleChange}

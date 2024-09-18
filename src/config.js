@@ -3,4 +3,4 @@ export const isDevMode = () =>
 
 export const apiUrl = isDevMode()
   ? "http://localhost:4000"
-  : "https://xclothes-backend.herokuapp.com";
+  : "https://portfolio-xclothes-backend.onrender.com";
